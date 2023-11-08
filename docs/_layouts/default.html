@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header style="background:#DDDDDD">
+      <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
         {% if site.logo %}
@@ -30,21 +30,14 @@
         {% endif %}
       </header>
       <section>
-
-      {%capture category%}{{ page.url | relative_url | replace: "/",""}}{%endcapture%}
-
-      <ul>
         {% for post in site.posts %}
-          {% if category == "" or post.categories contains category %}
-            <li>
-              <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            </li>
+          {% if post.categories contains page.categories or page.categories == "home" %}
+            - <a href="{{ post.url }}">{{ post.title }}</a>
+            <small>| {{ post.date | date: "%-d %B %Y" }}</small>
           {% endif %}
         {% endfor %}
-      </ul>
 
-      {{ content }}
-
+        {{ content | newline_to_br }}
       </section>
       <footer>
       </footer>
