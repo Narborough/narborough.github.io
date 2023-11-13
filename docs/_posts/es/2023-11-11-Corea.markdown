@@ -5,10 +5,10 @@ date: 2023-11-11 23:38:56 +0900
 categories: es
 tags: A2
 ---
-¡hola!
-Es la tarea.
+¡hola!  
+Es la tarea.  
 
-Corea tiene una superficie de 223,657 cuadros kms.
-Consiguió la independencia de Japon en 1945.
-Tiene una población de mas de 51,354,000 de habitantes.
-Su idioma oficial es el coreano.
+Corea tiene una superficie de 223,657 cuadros kms.  
+Consiguió la independencia de Japon en 1945.  
+Tiene una población de mas de 51,354,000 de habitantes.  
+Su idioma oficial es el coreano.  

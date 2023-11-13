@@ -21,7 +21,7 @@
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <h6>{{ site.description | default: site.github.project_tagline }}</h6>
 
         {% include navigation.html %}
 
@@ -36,7 +36,8 @@
             <small>| {{ post.date | date: "%-d %B %Y" }}</small><br>
           {% endif %}
         {% endfor %}
-        {{ content | newline_to_br }}
+        {{ content }}
+        <!--{{ content | newline_to_br }}-->
       </section>
       <footer>
       </footer>

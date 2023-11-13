@@ -69,8 +69,13 @@
 .highlight { background-color: #f8f8f8; }
 
 body { background-color: #fff; padding: 20px; font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #727272; font-weight: 400; }
-h1, h2, h3, h4, h5, h6 { color: #222; margin: 0 0 10px; }
-p, ul, ol, table, pre, dl { margin: 0 0 10px; }
+h1, h2, h3, h4, h5, h6 { color: #222; }
+.b-margin { margin: 0 0 0 10px; }
+.t-margin { margin: 10px 0 0 0; }
+.bt-margin { margin: 10px 0 0 10px; }
+.no-margin { margin: 0; }
+ul, ol, table, pre, dl { margin: 10px; }
+p { margin: 10px; padding: 10px; }
 h1, h2, h3 { line-height: 1.1; }
 h1 { font-size: 20px; }
 h2 { color: #393939; }
@@ -83,8 +88,8 @@ a:hover small { color: #777; }
 .wrapper { width: 960px; margin: 0 auto; }
 
 blockquote { border-left: 1px solid #e5e5e5; margin: 0; padding: 0 0 0 20px; font-style: italic; }
-code, pre { font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace; color: #333; }
-pre { padding: 8px 15px; background: #f8f8f8; border-radius: 5px; border: 1px solid #e5e5e5; overflow-x: auto; }
+code, pre { font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace; color: #333; font-size: 12px; border: 0; }
+pre { padding: 8px 15px; background: #f8f8f8; overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; }
 th, td { text-align: left; padding: 5px 10px; border-bottom: 1px solid #e5e5e5; }
 dt { color: #444; font-weight: 700; }
@@ -109,7 +114,7 @@ footer { width: 270px; float: left; position: fixed; bottom: 50px; -webkit-font-
 @media print, screen and (max-width: 720px) { body { word-wrap: break-word; }
   header { padding: 0; }
   header ul, header p.view { position: static; }
-  pre, code { word-wrap: normal; } }
+  pre, code { word-wrap: normal; border: 0; } }
 @media print, screen and (max-width: 480px) { body { padding: 15px; }
   .downloads { width: 99%; }
   .downloads li, .downloads li + li + li { width: 33%; } }
